@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">1234 en numération cistercienne</title>
+  <desc id="description">1000 en bas à gauche, 200 en bas à droite, 30 en haut à gauche et 4 en haut à droite.</desc>
+  <!-- Segment definitions and quadrant placement follow CistercianManipulator:
+       src/Service/CistercianNumberGeneratorService.php and src/ValueObject/Quadrant.php.
+       Independently checked against figure 2, page 4:
+       https://www.unicode.org/L2/L2020/20290-cistercian-digits.pdf
+       Quadrant size: 22; stave height: 88, as in the project's 4:1 proportions. -->
+  <g stroke="#e5c08b" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter">
+    <path id="stave" d="M64 20V108"/>
+    <path id="units-4" d="M64 42L86 20"/>
+    <path id="tens-30" d="M64 20L42 42"/>
+    <path id="hundreds-200" d="M64 86H86"/>
+    <path id="thousands-1000" d="M64 108H42"/>
+  </g>
+</svg>
